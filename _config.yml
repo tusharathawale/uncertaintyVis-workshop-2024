@@ -1,0 +1,53 @@
+
+title: Uncertainty Visualization 2024
+email: uncertaintyvis-chairs@googlegroups.com
+baseurl: ""
+url: "https://github.com/tusharathawale/uncertaintyVisWorkshop-2024"
+
+# --- site config ---
+
+description: > 
+  IEEE Workshop on Uncertainty Visualization, in conjunction with IEEE VIS 2024, Florida, USA
+
+navigation:
+ - title: Home
+   url: index.html
+ - title: Program
+   url: program.html
+ - title: Call for Papers
+   url: call-for-papers.html
+ - title: Submission
+   url: submission.html
+ - title: Accepted Papers
+   url: accepted-papers.html
+ - title: Awards
+   url: awards.html
+ - title: Organization
+   url: organization.html
+
+# --- end site config ---
+
+# build settings
+markdown: kramdown
+
+plugins: 
+#  - jekyll-last-modified-at
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - misc
+  - archive/previous
+  - s3_website.yml
+  - .travis.yml
+  - vendor
+
+collections: 
+  pages:
+    output: true
+    permalink: /:path:output_ext
+
+
+#theme: jekyll-theme-cayman
